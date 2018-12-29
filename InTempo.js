@@ -29,3 +29,21 @@ function forLoop(range, callback) {
 function insert(el, query) {
 	return document.querySelector(query).innerHTML += el;
 }
+
+/**
+ * each 
+ *
+ * iterate in an array
+ *
+ * exemple:
+ * let items = [{
+ * 		name: "John Doe"
+ * }]
+ * 
+ * console.log(each(items, (item, i) => { return `
+ * 		hi ${item.name} ${i}
+ * `}));
+ */
+function each(array, callback) {
+	return array.map(callback).join('');
+}
