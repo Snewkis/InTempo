@@ -47,3 +47,15 @@ function insert(el, query) {
 function each(array, callback) {
 	return array.map(callback).join('');
 }
+
+/**
+ * if Statement
+ *
+ * if true or not
+ *
+ * exemple :
+ * console.log(ifState(test == 2, `TRUE ${test}`, `FALSE ${test}`));
+ */
+function ifState(if_condition, if_true, if_false) {
+	return `${if_condition ? if_true : if_false}`;
+}
