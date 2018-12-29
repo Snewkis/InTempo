@@ -18,4 +18,4 @@ let eachArray = each(users, (item, i) => { return `
 `});
 
 insert(forLoopList, "#forLoopId");
-insert(forLoopList, "#eachId");
+insert(eachArray, "#eachId");
